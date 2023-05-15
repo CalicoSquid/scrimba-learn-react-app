@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#head-wrap {
+  display: flex;
+  align-items:center;
+  color: inherit;
+}
+
+.header {
+  margin: 0 0 0 10px;
+  color: #61DAFB;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.05em;
+  text-align: left;
+}
+
+.navbar {
+ padding: 10px;
+ display: flex;
+ height: 90px;
+ background-color: #21222A;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ z-index: 1000;
+}
+
+.links {
+ list-style-type: none;
+  display: flex;
+}
+
+.nav-link {
+ text-decoration: none;
+ color: #000;
+ padding: 10px;
+ color: #61DAFB;
+ font-family: Inter;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 19px;
+ letter-spacing: 0em;
+ text-align: right;
+}
+
+.nav-link:hover {
+  color:#a1e5f8
+}
+
+.section-header {
+  font-size: 3rem;letter-spacing: -0.05em;
+  margin: 30px 15px 0 15px;;
+}
+
+.react-list {
+  margin-left: 40px;
+  font-size: 1.5rem;
+}
+
+.react-list > li{
+  padding-block: 10px;
+}
+
+.react-list > li::marker {
+  color: #61DAFB; 
+  font-size: 2rem;
+}
+
+.section {
+  height: 100vh;
+  padding: 100px 10px 10px 30px;
+  position: relative;
+}
+
+.one {
+  background-color: #282D35;
+  color: white;
+}
+
+.section::after {
+  content: "";
+  height: 80vh;
+  width: 250px;
+  background-image: url("./images/react-blue.png");
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  opacity: 0.05;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;   
+}
+
+
+.two {
+  background-color: #61DAFB;
+  color: #282D35;
+}
+
+.two::after {
+  background-image: url("./images/react-black.png");
+ 
+}
+
+.three {
+  background-color: #282D35;
+  color: white;
+}
+
+#footer {
+  background-color: #f0f0f0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
